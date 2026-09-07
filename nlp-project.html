@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Trust &amp; Safety NLP | Araya Chaowalit</title>
+    <meta name="description" content="Multilingual Trust and Safety NLP case study by Araya Chaowalit.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Araya Chaowalit</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section project-page-header">
+            <p class="section-label">PROJECT CASE STUDY</p>
+            <h1>Multilingual Trust &amp; Safety NLP</h1>
+            <p class="section-description">
+                A Thai–English text-classification pipeline using multilingual
+                DistilBERT to detect potential off-platform communication and policy-violating intent.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="project-showcase nlp-showcase">
+                <div class="nlp-case-visual" aria-label="NLP classification workflow">
+                    <p class="nlp-case-label">MODEL WORKFLOW</p>
+
+                    <div class="nlp-workflow-step">
+                        <span class="nlp-step-number">01</span>
+                        <div>
+                            <strong>Labeled Messages</strong>
+                            <small>Thai and English policy examples</small>
+                        </div>
+                    </div>
+
+                    <div class="nlp-case-arrow" aria-hidden="true">↓</div>
+
+                    <div class="nlp-workflow-step">
+                        <span class="nlp-step-number">02</span>
+                        <div>
+                            <strong>Data Preparation</strong>
+                            <small>Clean, validate and remove duplicates</small>
+                        </div>
+                    </div>
+
+                    <div class="nlp-case-arrow" aria-hidden="true">↓</div>
+
+                    <div class="nlp-workflow-step">
+                        <span class="nlp-step-number">03</span>
+                        <div>
+                            <strong>Stratified Data Split</strong>
+                            <small>Training, validation and held-out test sets</small>
+                        </div>
+                    </div>
+
+                    <div class="nlp-case-arrow" aria-hidden="true">↓</div>
+
+                    <div class="nlp-workflow-step">
+                        <span class="nlp-step-number">04</span>
+                        <div>
+                            <strong>Multilingual Tokenization</strong>
+                            <small>Padding and truncation to 64 tokens</small>
+                        </div>
+                    </div>
+
+                    <div class="nlp-case-arrow" aria-hidden="true">↓</div>
+
+                    <div class="nlp-workflow-step nlp-case-highlight">
+                        <span class="nlp-step-number">05</span>
+                        <div>
+                            <strong>DistilBERT Fine-Tuning</strong>
+                            <small>Binary sequence-classification model</small>
+                        </div>
+                    </div>
+
+                    <div class="nlp-case-arrow" aria-hidden="true">↓</div>
+
+                    <div class="nlp-workflow-step">
+                        <span class="nlp-step-number">06</span>
+                        <div>
+                            <strong>Threshold Optimization</strong>
+                            <small>Validation-based precision–recall balance</small>
+                        </div>
+                    </div>
+
+                    <div class="nlp-case-arrow" aria-hidden="true">↓</div>
+
+                    <div class="nlp-workflow-step nlp-case-result">
+                        <span class="nlp-step-number">07</span>
+                        <div>
+                            <strong>Prediction + Human Review</strong>
+                            <small>Prioritize potentially risky messages</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-overview">
+                    <p class="project-type">NLP MODEL FINE-TUNING</p>
+                    <h3>Detecting rare policy violations in multilingual messages.</h3>
+                    <p>
+                        The project fine-tunes multilingual DistilBERT for a highly
+                        imbalanced binary-classification problem involving Thai and English text.
+                    </p>
+                    <p>
+                        It demonstrates data validation, Transformer fine-tuning,
+                        validation-based threshold optimization, held-out testing,
+                        error analysis and responsible human oversight.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/araya-chaowalit/multilingual-trust-safety-nlp"
+                           target="_blank" rel="noreferrer" class="button primary-button">View GitHub</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <p class="section-label">BUSINESS CHALLENGE</p>
+            <h2>Supporting safer platform communication</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h4>Rare Positive Events</h4>
+                    <p>Potential violations are rare, making accuracy alone misleading.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h4>Multilingual Language</h4>
+                    <p>Messages contain Thai, English, mixed-language text and indirect wording.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h4>Operational Trade-offs</h4>
+                    <p>The threshold balances missed violations against unnecessary review alerts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <p class="section-label">DATASET</p>
+            <h2>Highly imbalanced labeled data</h2>
+            <div class="nlp-stat-grid">
+                <div class="nlp-stat-card"><strong>3,044</strong><span>Total messages</span></div>
+                <div class="nlp-stat-card"><strong>3,000</strong><span>Negative examples</span></div>
+                <div class="nlp-stat-card"><strong>44</strong><span>Positive examples</span></div>
+                <div class="nlp-stat-card"><strong>1.45%</strong><span>Positive-class rate</span></div>
+            </div>
+            <p class="nlp-supporting-text">
+                The validation set selected the decision threshold. The held-out
+                test set was evaluated only after threshold selection.
+            </p>
+        </section>
+
+        <section class="section">
+            <p class="section-label">HELD-OUT EVALUATION</p>
+            <h2>Positive-class performance</h2>
+            <div class="nlp-results-grid">
+                <div class="nlp-result-card"><strong>99.32%</strong><span>Accuracy</span></div>
+                <div class="nlp-result-card nlp-result-primary"><strong>85.71%</strong><span>Precision</span></div>
+                <div class="nlp-result-card"><strong>60.00%</strong><span>Recall</span></div>
+                <div class="nlp-result-card nlp-result-primary"><strong>70.59%</strong><span>F1 Score</span></div>
+            </div>
+            <div class="nlp-result-note">
+                <h3>Result interpretation</h3>
+                <p>
+                    The model detected 6 of 10 positive test examples and generated
+                    one false-positive alert. Precision, recall and F1 are more
+                    informative than accuracy for this highly imbalanced dataset.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <p class="section-label">RESPONSIBLE AI</p>
+            <h2>Privacy, limitations and human review</h2>
+            <div class="challenge-list">
+                <div class="challenge-row">
+                    <div class="challenge-name">Data privacy</div>
+                    <div class="challenge-description">Original messages and user identities are not published; public samples are synthetic.</div>
+                </div>
+                <div class="challenge-row">
+                    <div class="challenge-name">Limited positives</div>
+                    <div class="challenge-description">Only 44 positive examples are labeled, including 10 in the test set, so results are preliminary.</div>
+                </div>
+                <div class="challenge-row">
+                    <div class="challenge-name">Human oversight</div>
+                    <div class="challenge-description">Predictions prioritize review and should not independently determine punitive actions.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section nlp-final-cta">
+            <p class="section-label">SOURCE CODE</p>
+            <h2>Explore the complete NLP workflow</h2>
+            <p>Review the notebook, synthetic sample data and evaluation approach on GitHub.</p>
+            <a href="https://github.com/araya-chaowalit/multilingual-trust-safety-nlp"
+               target="_blank" rel="noreferrer" class="button primary-button">View Project on GitHub</a>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

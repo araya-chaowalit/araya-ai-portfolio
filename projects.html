@@ -1,353 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        DermaGlow AI Store | Araya Chaowalit
-    </title>
-
-    <meta
-        name="description"
-        content="DermaGlow AI Store case study by Araya Chaowalit."
-    >
-
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Projects | Araya Chaowalit</title>
+    <meta name="description" content="Selected Applied AI projects by Araya Chaowalit.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-
 <body>
-
     <header>
-
         <nav class="navbar">
-
-            <div class="logo">
-                Araya Chaowalit
-            </div>
-
+            <div class="logo">Araya Chaowalit</div>
             <div class="nav-links">
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="projects.html">
-                    Projects
-                </a>
-
-                <a href="index.html#skills">
-                    Skills
-                </a>
-
-                <a href="index.html#about">
-                    About
-                </a>
-
-                <a href="index.html#contact">
-                    Contact
-                </a>
-
+                <a href="index.html">Home</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
             </div>
-
         </nav>
-
     </header>
 
-
     <main>
+        
 
-        <!-- PROJECT HEADER -->
-        <section class="section project-page-header">
-
-            <p class="section-label">
-                PROJECT CASE STUDY
-            </p>
-
-            <h1>
-                DermaGlow AI Store
-            </h1>
-
-            <p class="section-description">
-                A full-stack AI skincare assistant combining
-                semantic retrieval, Retrieval-Augmented Generation,
-                conversation memory and cloud deployment.
-            </p>
-
-        </section>
-
-
-        <!-- PROJECT OVERVIEW -->
-        <section class="section">
-
-            <div class="project-showcase">
-
-                <div class="project-image">
-
-                    <img
-                        src="assets/images/dermaglow-demo.jpg"
-                        alt="DermaGlow AI Store"
-                    >
-
-                </div>
-
-
-                <div class="project-overview">
-
-                    <p class="project-type">
-                        FULL-STACK AI · RAG
-                    </p>
-
-                    <h3>
-                        AI-powered product discovery
-                        through natural conversation.
-                    </h3>
-
+        <section class="section project-directory-section" aria-label="Project directory">
+            <div class="project-directory-grid">
+                <article class="directory-card">
+                    
+                    <p class="project-type">FULL-STACK AI · RAG</p>
+                    <h2>DermaGlow AI Store</h2>
                     <p>
-                        DermaGlow is a working AI-powered skincare
-                        storefront where users can ask questions
-                        naturally and receive relevant product
-                        recommendations.
+                        An AI-powered skincare storefront combining semantic
+                        product retrieval, conversation memory, Gemini and a FastAPI backend.
                     </p>
-
-                    <p>
-                        The application combines a JavaScript frontend,
-                        FastAPI backend, semantic product retrieval,
-                        Gemini and conversation context.
-                    </p>
-
-
-                    <div class="project-buttons">
-
-                        <a
-                            href="https://dermaglow-store.onrender.com/"
-                            target="_blank"
-                            class="button primary-button"
-                        >
-                            Try Live Demo
-                        </a>
-
-                        <a
-                            href="https://github.com/araya-chaowalit/dermaglow-ai-store"
-                            target="_blank"
-                            class="button secondary-button"
-                        >
-                            View GitHub
-                        </a>
-
+                    <div class="project-tags" aria-label="DermaGlow technologies">
+                        <span>RAG</span><span>FastAPI</span><span>Gemini</span><span>JavaScript</span>
                     </div>
+                    <div class="project-buttons">
+                        <a href="dermaglow.html" class="button primary-button">View Project</a>
+                    </div>
+                </article>
 
-                </div>
-
+                <article class="directory-card directory-card-accent">
+                    
+                    <p class="project-type">NLP MODEL FINE-TUNING</p>
+                    <h2>Multilingual Trust &amp; Safety NLP</h2>
+                    <p>
+                        A Thai–English text-classification system using multilingual
+                        DistilBERT to identify potential off-platform communication
+                        and policy violations.
+                    </p>
+                    
+                    <div class="project-tags" aria-label="NLP technologies">
+                        <span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>DistilBERT</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="nlp-project.html" class="button primary-button">View Project</a>
+                    </div>
+                </article>
             </div>
-
         </section>
-
-
-        <!-- ARCHITECTURE -->
-        <section class="section">
-
-            <p class="section-label">
-                SYSTEM ARCHITECTURE
-            </p>
-
-            <h2>
-                How DermaGlow works
-            </h2>
-
-
-            <div class="architecture-flow">
-
-                <div class="architecture-node">
-                    User
-                </div>
-
-                <div class="architecture-arrow">
-                    ↓
-                </div>
-
-                <div class="architecture-node">
-                    Frontend
-                    <span>
-                        HTML · CSS · JavaScript
-                    </span>
-                </div>
-
-                <div class="architecture-arrow">
-                    ↓
-                </div>
-
-                <div class="architecture-node">
-                    FastAPI Backend
-                    <span>
-                        Python REST API
-                    </span>
-                </div>
-
-                <div class="architecture-arrow">
-                    ↓
-                </div>
-
-                <div class="architecture-node architecture-highlight">
-                    Semantic Retrieval
-                    <span>
-                        Embeddings + Similarity Search
-                    </span>
-                </div>
-
-                <div class="architecture-arrow">
-                    ↓
-                </div>
-
-                <div class="architecture-node architecture-highlight">
-                    RAG Context
-                    <span>
-                        Relevant Product Information
-                    </span>
-                </div>
-
-                <div class="architecture-arrow">
-                    ↓
-                </div>
-
-                <div class="architecture-node">
-                    Gemini
-                    <span>
-                        LLM Response Generation
-                    </span>
-                </div>
-
-                <div class="architecture-arrow">
-                    ↓
-                </div>
-
-                <div class="architecture-node">
-                    Structured Response
-                    <span>
-                        Reply + Product Data
-                    </span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- RAG WORKFLOW -->
-        <section class="section">
-
-            <p class="section-label">
-                AI WORKFLOW
-            </p>
-
-            <h2>
-                What happens when a user asks a question?
-            </h2>
-
-
-            <div class="feature-grid">
-
-                <div class="feature-card">
-                    <div class="feature-number">01</div>
-
-                    <h4>
-                        User Query
-                    </h4>
-
-                    <p>
-                        The user asks a natural-language question
-                        about a skincare concern or product need.
-                    </p>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-number">02</div>
-
-                    <h4>
-                        Semantic Retrieval
-                    </h4>
-
-                    <p>
-                        The backend finds the most relevant products
-                        using embedding similarity.
-                    </p>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-number">03</div>
-
-                    <h4>
-                        RAG Context
-                    </h4>
-
-                    <p>
-                        Retrieved product information becomes
-                        the context supplied to Gemini.
-                    </p>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-number">04</div>
-
-                    <h4>
-                        AI Response
-                    </h4>
-
-                    <p>
-                        Gemini generates a response grounded in
-                        the retrieved product catalog.
-                    </p>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-number">05</div>
-
-                    <h4>
-                        Structured Data
-                    </h4>
-
-                    <p>
-                        The backend returns the natural-language
-                        reply together with product metadata.
-                    </p>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-number">06</div>
-
-                    <h4>
-                        Product Cards
-                    </h4>
-
-                    <p>
-                        JavaScript renders images, prices and
-                        View Product actions in the chatbot UI.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
     </main>
-
-
     <script src="js/script.js"></script>
-
 </body>
-
 </html>
