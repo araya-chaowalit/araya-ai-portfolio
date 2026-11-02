@@ -1,0 +1,226 @@
+/* Styles for the telecom portfolio only */
+.telecom-page .hero-label {
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+/* Telecom expertise card */
+.telecom-page .telecom-expertise {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.telecom-page .telecom-expertise-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.telecom-page .telecom-expertise-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.telecom-page .telecom-expertise-item h4 {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.telecom-page .telecom-expertise-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+/* Telecom experience section */
+.telecom-page .telecom-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.telecom-page .telecom-experience-card {
+    min-width: 0;
+    padding: 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 16px;
+}
+
+.telecom-page .telecom-company {
+    margin: 0 0 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.telecom-page .telecom-experience-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.telecom-page .telecom-role-meta {
+    margin: 0 0 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.telecom-page .telecom-experience-card ul {
+    margin: 0 0 1.25rem;
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.telecom-page .telecom-experience-card li {
+    margin-bottom: 0.65rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .telecom-page .telecom-experience-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Featured network research */
+.telecom-page .telecom-research-card {
+    grid-column: 1 / -1;
+}
+
+.telecom-page .telecom-research-context {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.telecom-page .telecom-research-details {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.telecom-page .telecom-research-details > div {
+    min-width: 0;
+}
+
+.telecom-page .telecom-research-details h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+.telecom-page .telecom-research-details p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.telecom-page .telecom-research-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .telecom-page .telecom-research-details {
+        grid-template-columns: 1fr;
+    }
+}
+/* Wireless research report */
+.telecom-page .telecom-publication {
+    padding: 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 16px;
+}
+
+.telecom-page .telecom-publication h3 {
+    margin: 0.5rem 0 1rem;
+    font-size: 1.35rem;
+    line-height: 1.5;
+}
+
+.telecom-page .telecom-publication-meta {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.telecom-page .telecom-publication p {
+    line-height: 1.7;
+}
+
+.telecom-page .telecom-publication ul {
+    margin: 1rem 0 1.5rem;
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.telecom-page .telecom-publication li {
+    margin-bottom: 0.65rem;
+    line-height: 1.7;
+}
+
+.telecom-page .telecom-publication .project-buttons {
+    margin-top: 1.5rem;
+}
+/* IoT on the left; DermaGlow and NLP on the right */
+.telecom-page #projects .project-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+        "iot dermaglow"
+        "iot nlp";
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.telecom-page #projects .telecom-research-card {
+    grid-area: iot;
+    min-width: 0;
+}
+
+.telecom-page #projects .dermaglow-project-preview {
+    grid-area: dermaglow;
+    min-width: 0;
+}
+
+.telecom-page #projects .nlp-project-preview {
+    grid-area: nlp;
+    min-width: 0;
+}
+
+/* Allow each card to fit its content */
+.telecom-page #projects .project-preview {
+    height: auto;
+    min-height: 0;
+}
+
+/* Keep the IoT explanations readable within one column */
+.telecom-page #projects .telecom-research-details {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+/* Stack all projects on smaller screens */
+@media (max-width: 900px) {
+    .telecom-page #projects .project-preview-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "iot"
+            "dermaglow"
+            "nlp";
+    }
+}
+/* Navigation for the telecom portfolio */
+.telecom-page .navbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.telecom-page .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+}
+
+/* Leave room above sections when navigating by anchor */
+.telecom-page section[id] {
+    scroll-margin-top: 9rem;
+}
